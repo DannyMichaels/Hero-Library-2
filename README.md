@@ -4,7 +4,8 @@
 
 ## Project Description
 
-Hero Library is an app where the user will be able to search and find Super-Hero data such as stats and images.
+Hero Library is an website where the user will be able to search and find Super-Hero data such as stats and images. 
+once the user enters his input the image of searched hero will spawn, with additional description and data underneath.
 
 ## API and Data Sample
 
@@ -34,26 +35,22 @@ https://www.figma.com/file/RiizESSZmnQ8iE8pLwjgDl/Hero-Library?node-id=0%3A1
 - Built with HTML, CSS, and JavaScript.
 - Styled using Flexbox or Grid
 - Use Axios to make a request to an external data source and insert some of the retrieved data on to the DOM.
-- Implement responsive design using at least one media query/breakpoint (i.e. desktop, tablet, mobile, etc).
-- Have a search feature
-- User should be able to search and receive the name, image, and some info about searched super-hero.
+- JS and API - User should be able to search and receive the name, image, and some info about searched super-hero.
+- Add media-query for phone
 
 #### PostMVP  
-*These are examples only. Replace with your own Post-MVP features.*
 
-- None yet
+- Create a random hero feature, a button will make a random hero with the additional data appear.
 
-## Project Schedule (to be updated)
 
-This schedule will be used to keep track of your progress throughout the week and align with our expectations.  
+## Project Schedule 
 
-You are **responsible** for scheduling time with your squad to seek approval for each deliverable by the end of the corresponding day, excluding `Saturday` and `Sunday`.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Sept 19| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Sept 19-21| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
 |Sept 21| Project Approval | Incomplete
-|Sept 22| Core Application Structure (HTML, CSS, JS) | Complete
+|Sept 21-22| Core Application Structure (HTML, CSS, JS) | Incomplete
 |Sept 23| MVP | Incomplete
 |Sept 24| Post MVP/Styling | Incomplete
 |Sept 25| Presentations | Incomplete
@@ -72,7 +69,8 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | --- | :---: |  :---: | :---: | :---: |
 | Test if API works | H | 1hr | N/A | 30min |
 | Creating base of HTML, CSS and JS | 3hr | N/A | N/A | N/A |
-| Website Presentation | 4hr | N/A | N/A |
+| JS and API functionality | 7hr | N/A | N/A | N/A |
+| Website Appearance | 6hr | N/A | N/A |
 | Website Functionality | 6hr | N/A | N/A |
 | Total | H | N/A | N/A | N/A  |
 
