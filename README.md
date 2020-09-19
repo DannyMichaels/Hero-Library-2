@@ -2,8 +2,6 @@
 
 ## Hero Library
 
-The name of your project.
-
 ## Project Description
 
 Hero Library is an app where the user will be able to search and find Super-Hero data such as stats and images.
