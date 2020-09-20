@@ -28,20 +28,21 @@ JSON snippet :
 
 ## Wireframes
 
-https://www.figma.com/file/RiizESSZmnQ8iE8pLwjgDl/Hero-Library?node-id=0%3A1
+Desktop and Mobile : https://www.figma.com/file/RiizESSZmnQ8iE8pLwjgDl/Hero-Library?node-id=0%3A1
 
 #### MVP 
 
 - Built with HTML, CSS, and JavaScript.
 - Styled using Flexbox or Grid
 - Use Axios to make a request to an external data source and insert some of the retrieved data on to the DOM.
-- JS and API - User should be able to search and receive the name, image, and some info about searched super-hero.
-- Add media-query for phone
+- User should be able to search and receive the name, image, and some info about searched super-hero.
+- Add media-query for mobile phones.
+
 
 #### PostMVP  
 
 - Create a random hero feature, a button will make a random hero with the additional data appear.
-
+- Add a movie feature, a movie related to the searched hero will appear next to the original search data.
 
 ## Project Schedule 
 
@@ -71,7 +72,7 @@ Time frames are also key in the development cycle.  You have limited time to cod
 | Creating base of HTML, CSS and JS | 3hr | N/A | N/A | N/A |
 | JS and API functionality | 7hr | N/A | N/A | N/A |
 | Website Appearance | 6hr | N/A | N/A |
-| Website Functionality | 6hr | N/A | N/A |
+| Additional Website Functionality with | 6hr | N/A | N/A |
 | Total | H | N/A | N/A | N/A  |
 
 ## Code Snippet
