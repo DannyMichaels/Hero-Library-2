@@ -11,6 +11,9 @@ once the user enters his input the image of searched hero will spawn, with addit
 
 I'll be using SuperHero API : https://superheroapi.com/
 
+API Link : 
+
+
 JSON snippet :
 ```
 {
@@ -49,7 +52,7 @@ Desktop and Mobile : https://www.figma.com/file/RiizESSZmnQ8iE8pLwjgDl/Hero-Libr
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Sept 19-21| Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete
+|Sept 19-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Sept 21| Project Approval | Incomplete
 |Sept 21-22| Core Application Structure (HTML, CSS, JS) | Incomplete
 |Sept 23| MVP | Incomplete
@@ -58,7 +61,7 @@ Desktop and Mobile : https://www.figma.com/file/RiizESSZmnQ8iE8pLwjgDl/Hero-Libr
 
 ## Priority Matrix
 
-- Top Priority : Check to see if the API even works (complete)
+- Top Priority : Check to see if the API even works 
 - HTML (initialize everything)
 - Javascript (making sure user can search and receive data)  
 - Stylizing the website (CSS)
