@@ -66,13 +66,13 @@ Tell us how long you anticipate spending on each area of development. Be sure to
 
 Time frames are also key in the development cycle.  You have limited time to code all phases of the game.  Your estimates can then be used to evalute game possibilities based on time needed and the actual time you have before game must be submitted. It's always best to pad the time by a few hours so that you account for the unknown so add and additional hour or two to each component to play it safe. Throughout your project, keep track of your Time Invested and Actual Time and update your README regularly.
 
-| Component | Estimated Time | Time Invested | Actual Time |
-| --- | |  :---: | :---: | :---: |
-| Test if API works | 1hr | N/A | 30min |
-| Creating base of HTML, CSS and JS | 3hr | N/A | N/A | N/A |
-| JS and API functionality | 7hr | N/A | N/A | N/A |
-| Website Appearance (CSS) | 6hr | N/A | N/A |
-| Debugging and Functionality | 6hr | N/A | N/A |
+| Component | Priority | Estimated Time | Time Invested | Actual Time |
+| --- | :---: |  :---: | :---: | :---: |
+| Test if API works | 1st | 1hr | N/A | 30min |
+| Creating base of HTML, CSS and JS | 2nd | 3hr | N/A | N/A | N/A |
+| JS and API functionality | 3rd | 7hr | N/A | N/A | N/A |
+| Website Appearance (CSS) | 4th | 6hr | N/A | N/A |
+| Debugging and Functionality | 5th | 6hr | N/A | N/A |
 | Total | 22hr | N/A | N/A | N/A  |
 
 ## Code Snippet
