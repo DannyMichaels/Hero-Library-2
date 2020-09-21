@@ -11,7 +11,7 @@ once the user enters his input the image of searched hero will spawn, with addit
 
 I'll be using SuperHero API : https://superheroapi.com/
 
-API Link : 
+API Link : https://www.superheroapi.com/api.php/1791582447662011/search/[heronamehere]
 
 
 JSON snippet :
