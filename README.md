@@ -31,8 +31,8 @@ JSON snippet :
 
 ## Wireframes
 
-Desktop : https://i.imgur.com/ttjtQTo.png
-Mobile : https://i.imgur.com/NUe0Ash.png
+Desktop : !(https://i.imgur.com/ttjtQTo.png)
+Mobile : !(https://i.imgur.com/NUe0Ash.png)
 
 #### MVP 
 
