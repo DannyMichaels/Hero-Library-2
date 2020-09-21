@@ -1,6 +1,6 @@
 // init domain, key and baseurl
 
-const domain = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/'
+const domain = 'https://superheroapi.com/api/'
 const apiKey = '1791582447662011'
 const baseUrl = `${domain}${apiKey}/search/`
 
@@ -8,7 +8,6 @@ const baseUrl = `${domain}${apiKey}/search/`
 const input = document.querySelector('#search-hero-input')
 const button = document.querySelector('#search-hero-button')
 
-// add event listener
 
 // add event listener
 button.addEventListener('click', async (e) => {
@@ -16,7 +15,7 @@ button.addEventListener('click', async (e) => {
   let userInput = input.value
   const res = await axios.get(`${baseUrl}${userInput}`)
   const response = res.data.results
-  // console.log(response)
+  console.log(response)
 
   // looping through array
   response.forEach((hero) => {
@@ -27,28 +26,46 @@ button.addEventListener('click', async (e) => {
 
     // creating name appearance
 
-    const name = document.createElement('h3')
+    const name1 = document.createElement('h3')
 
     const heroName = hero.name 
-    name.textContent = `${heroName}`
-    heroDiv.append(name)
+    name1.textContent = `${heroName}`
+    heroDiv.append(name1)
 
     // creating image appearance
     
     const heroImg = document.createElement('img')
+    heroImg.className = 'hero-img'
     heroImg.src = hero.image.url 
     heroDiv.append(heroImg)
     
-
-    //
-    const heroBioPara = document.createElement('p')
     
     const heroBio = hero.biography
-    heroBioPara.textContent = `${heroBio}`
-    heroDiv.append(heroBioPara) 
-  
+    console.log(heroBio)
+    
+    const heroAppearance = hero.appearance
+    console.log(heroAppearance)
+
+    const heroPara = document.createElement('p')
+    
+    heroPara.innerText = 'Publisher: ' + heroBio.publisher + '\n Aliases: ' + heroBio.aliases + '\n Gender: ' + heroAppearance.gender
+    heroDiv.append(heroPara) 
+
     input.value = '' // this resets user input once search button is clicked
   
   })
 })
 
+
+// const heroBio = hero.biography
+    
+// heroBio.forEach((bio) => {
+  
+//   const appearance = bio.appearance
+//   const heroAppearancePara = document.createElement('p')
+
+// heroAppearancePara.textContent = `${appearance}`
+// heroDiv.append(heroAppearancePara) ›
+
+  
+// }) 

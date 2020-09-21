@@ -7,6 +7,7 @@ body {
     /* background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FQFKK2Xj.jpg&f=1&nofb=1'); */
   color: white;
   }
+
   #tabs {
     display: block;
     margin: 0 auto;
@@ -43,13 +44,23 @@ body {
 
   h3 {
     display: flex;
-    margin-left: 200px;
+    margin-left: 50px;
   }
 
   #title-image{
     border: 5px solid white;
     border-radius: 10%;
     width: 40%;
+  }
+ 
+  p {
+  font-size: medium;
+  }
+ 
+  .hero-img {
+    width: 250px;
+    height: 250px;
+    justify-content: center;
   }
 
   .search-container {
@@ -165,5 +176,3 @@ body {
     margin-left: 20px;
     }
   }
-
-  3
