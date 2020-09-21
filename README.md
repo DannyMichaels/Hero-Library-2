@@ -56,7 +56,7 @@ Desktop and Mobile : https://www.figma.com/file/RiizESSZmnQ8iE8pLwjgDl/Hero-Libr
 |Sept 21| Project Approval | Incomplete
 |Sept 21-22| Core Application Structure (HTML, CSS, JS) | Incomplete
 |Sept 23| MVP | Incomplete
-|Sept 24| Post MVP/Styling | Incomplete
+|Sept 24| Post MVP + Styling | Incomplete
 |Sept 25| Presentations | Incomplete
 
 ## Priority Matrix
