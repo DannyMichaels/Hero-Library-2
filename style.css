@@ -43,6 +43,7 @@ body {
 
   h3 {
     display: flex;
+    margin-left: 200px;
   }
 
   #title-image{

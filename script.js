@@ -1,6 +1,6 @@
 // init domain, key and baseurl
 
-const domain = 'https://superheroapi.com/api/'
+const domain = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/'
 const apiKey = '1791582447662011'
 const baseUrl = `${domain}${apiKey}/search/`
 
@@ -17,9 +17,8 @@ button.addEventListener('click', async (e) => {
   const res = await axios.get(`${baseUrl}${userInput}`)
   const response = res.data.results
   // console.log(response)
-  
-  // looping through array
 
+  // looping through array
   response.forEach((hero) => {
     // console.log(hero.image.url)
     const heroesDiv = document.querySelector('.heroes') // div for heroes
@@ -40,6 +39,16 @@ button.addEventListener('click', async (e) => {
     heroImg.src = hero.image.url 
     heroDiv.append(heroImg)
     
+
+    //
+    const heroBioPara = document.createElement('p')
+    
+    const heroBio = hero.biography
+    heroBioPara.textContent = `${heroBio}`
+    heroDiv.append(heroBioPara) 
+  
+    input.value = '' // this resets user input once search button is clicked
+  
   })
 })
 
