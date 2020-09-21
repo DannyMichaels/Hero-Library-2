@@ -31,7 +31,8 @@ JSON snippet :
 
 ## Wireframes
 
-Desktop and Mobile : https://www.figma.com/file/RiizESSZmnQ8iE8pLwjgDl/Hero-Library?node-id=0%3A1
+Desktop : https://i.imgur.com/ttjtQTo.png
+Mobile : https://i.imgur.com/NUe0Ash.png
 
 #### MVP 
 
