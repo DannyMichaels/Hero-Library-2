@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,23 +13,40 @@
 </head>
 
 <body>
-<h1 id="main-title">Hero Library</h1>  
-<img id="title-image" src="images/heroes1.png" alt="Super Heroes">
 
-<div class="search-container">
-<form>
-  <input id="search-hero-input" type="text" placeholder="Super-Hero Name">
-  <button id="search-hero-button" id="hero-search">Search</button>
-</div>
-</form>
+  <!-- TABS -->
 
-<div class="heroes"></div>
+  <header>
+    <div id="tabs">
+      <ul class="tabs-ul">
+        <li class="tabs-li"><a class="tabs-links" href="#main-title">Home</a></li>
+        <li class="tabs-li"><a class="tabs-links" href="">About</li></a>
+        <li class="tabs-li"><a class="tabs-links" href="">Contact Me</li></a>
+      </ul>
+    </div>
 
-<footer>
-  <div id="logos">
-    <!-- <img id="marvel-logo" src="images/Marvel.png" alt="Marvel Logo">   -->
-  <!-- <img id="dc-logo" src="images/DC.png" alt="DC logo"> -->
+  </header>
+
+
+    <!-- INTRO -->
+
+  <h1 id="main-title">Hero Library</h1>
+  <img id="title-image" src="images/heroes1.png" alt="Super Heroes">
+
+  <div class="search-container">
+    <form>
+      <input id="search-hero-input" type="text" placeholder="Super-Hero Name">
+      <button id="search-hero-button" id="hero-search">Search</button>
   </div>
+  </form>
+
+  <div class="heroes"></div>
+
+  <footer>
+    <div id="logos">
+      <img id="marvel-logo" src="images/Marvel.png" alt="Marvel Logo" style="width: 20%">  
+      <img id="dc-logo" src="images/DC.png" alt="DC logo" style="width: 10%">
+    </div>
   </footer>
 
 </body>

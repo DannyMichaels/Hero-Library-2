@@ -1,0 +1,168 @@
+body {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  background-color: black;
+    /* background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapercave.com%2Fwp%2FQFKK2Xj.jpg&f=1&nofb=1'); */
+  color: white;
+  }
+  #tabs {
+    display: block;
+    margin: 0 auto;
+    }
+    .tabs-ul {
+      list-style-type: none;
+      background-color: #00052c;
+      color: white;
+      text-align: right;
+      padding: 20px;
+    }
+    
+    .tabs-li {
+    display: inline;
+    padding: 20px;
+    }
+    .tabs-links {
+      text-decoration: none;
+      color: white;
+    }
+    
+    .tabs-links:hover {
+     text-decoration: underline;
+     text-decoration-color: white;
+      }
+      
+  h1 {
+    font-family: 'Anton', sans-serif;
+    border: 2px solid white;
+    padding: 20px;
+    background-color: red;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    display: flex;
+  }
+
+  #title-image{
+    border: 5px solid white;
+    border-radius: 10%;
+    width: 40%;
+  }
+
+  .search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  input {
+    width: 200px;
+    padding: 12px;
+    margin: 5px;
+    background-color: red;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: 2px solid white;
+    text-transform: uppercase;
+  }
+
+  ::placeholder{  /* got this from google, "how to change color of placeholder" */
+ color: white;
+ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  button {
+    text-transform: uppercase;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 12px;
+    margin: 20px;
+    width: 120px
+  }
+
+  button:hover {
+    text-decoration: underline;
+    border: 3px dotted white;
+  }
+
+  #heroes {
+    height: 10px;
+  }
+
+  #logos {
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: column;
+  }
+
+  /* #marvel-logo {
+    width: 40%;
+    height: 40%;
+    margin-left: auto;
+   }
+   
+   #dc-logo {
+     width: 15%;
+     height: 15%;
+     margin-right: auto;
+     margin-top: -250px;
+   } */
+
+   @media only screen and (max-height 600px) {
+     body {
+       display: flex;
+     }
+   
+
+   #title-image {
+     display: none;
+   }
+
+   h3 {
+     font-size: large;
+     text-decoration: underline;
+   }
+
+   #search-hero-input,
+   #search-hero-button {
+     display: inline;
+   }
+  }
+   /* I want the buttons to be display-block for low width screens */
+   @media only screen and (max-height: 600px) {
+    body {
+      display: flex;
+    }
+  
+    #title-image {
+      display: none;
+    }
+    p {
+     font-size: large;
+     text-decoration: underline;
+    }
+    #search-hero-input,
+    #search-hero-button {
+    flex-flow: column;
+    }
+  }
+  
+  @media only screen and (max-width: 812px) {
+    #search-hero-input,
+    #search-hero-button {
+      display: block;
+    }
+    
+    #search-hero-input {
+    width: 100px;
+    margin-left: 20px;
+    }
+  }
+
+  3
