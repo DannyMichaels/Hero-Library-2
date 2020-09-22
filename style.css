@@ -29,14 +29,16 @@ body {
     border: solid 2px white; 
   }
   
-  .footer-image {
-  height: 25%;
-  width: 25%;
+  .footer-image{
+    width: 25%;
   margin: auto;
   /* margin-bottom: 10px; */
   margin-left: 0;
   }
 
+  .footer-image a img{
+    width: 24%;
+  }
   footer {
     width: 100%;
     
@@ -156,12 +158,12 @@ body {
 
   .heroes {
     display: flex;
-    flex-flow: row;
+    flex-flow: row wrap;
+    justify-content: center;
   }
 
   .hero-div {
-    display: flex;
-    flex-direction: column;
+    
     flex-basis: 150px;
   }
 
