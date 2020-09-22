@@ -127,9 +127,9 @@ Mobile : ![alt text](https://i.imgur.com/NUe0Ash.png)
 | --- | :---: |  :---: | :---: | :---: |
 | Test if API works | 1st | 1hr | N/A | 30min |
 | Creating base data of HTML, CSS and JS | 2nd | 3hr | N/A | 1hr |
-| JS and API functionality | 3rd | 7hr | 2hr | N/A |
-| Website Appearance (CSS) | 4th | 6hr | 1hr| N/A |
-| Debugging and Functionality | 5th | 6hr | N/A | N/A |
+| JS and API functionality | 3rd | 7hr | 3hr | 3hr |
+| Website Appearance (CSS) | 4th | 6hr | 3hr| 3hr |
+| POSTPVM | 5th | 6hr | N/A | N/A |
 | Total | 22hr | N/A | N/A | N/A  |
 
 ## Code Snippet
