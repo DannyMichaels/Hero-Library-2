@@ -17,7 +17,7 @@ button.addEventListener('click', async (e) => {
   const res = await axios.get(`${baseUrl}${userInput}`)
   const response = res.data.results
   // console.log(response)
-  removeHero() // putting the remove hero function in the event listener
+  removeHero() // putting the remove hero function in the event listener  
 
   // looping through array
   response.forEach((hero) => {
