@@ -83,8 +83,8 @@ JSON snippet :
 
 ## Wireframes
 
-Desktop : ![alt text](https://i.imgur.com/ttjtQTo.png)
-Mobile : ![alt text](https://i.imgur.com/NUe0Ash.png)
+Desktop : ![alt text](https://i.imgur.com/eCS03TZ.png)
+Mobile : ![alt text](https://i.imgur.com/zS5deNb.png)
 
 #### MVP 
 
