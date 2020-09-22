@@ -251,10 +251,11 @@ body {
   #tabs,
   .tabs-li,
   .tabs-ul,
-   .tabs-links{
+  .tabs-links{
    display: flex;
    flex-direction: column;
    padding: 5px;
+   text-align: center;
   }
 
   #tabs {
