@@ -11,7 +11,11 @@ body {
   align-items: center;
   background-color: black;
   color: white;
-
+ 
+  /* width: 616px;
+  padding: 5px 14px 5px 14px;
+  margin: 0 auto;
+  padding-bottom: 20px; */
   
   background-image: url('http://i.stack.imgur.com/kx8MT.gif');
   background-position: center;
@@ -42,7 +46,9 @@ body {
   }
   footer {
     width: 100%;
-    
+    position: initial;
+    bottom: 0;
+    margin: 0 auto;
   }
  .footer-text {
    text-decoration: none;
@@ -207,13 +213,17 @@ body {
   }
   @media only screen and (max-height: 512px) {
     body {
-      display: flex;
+      /* display: flex; */
+       /* width: 616px;
+  padding: 5px 14px 5px 14px;
+  margin: 0 auto;
+  padding-bottom: 20px; */
     }
   
     #title-image {
       display: none;
     }
-
+    
     p {
      font-size: large;
      text-decoration: underline;
@@ -240,10 +250,23 @@ body {
   }
   
   @media only screen and (max-width: 812px) {
+   body {
+      /* width: 616px;
+  padding: 5px 14px 5px 14px;
+  margin: 0 auto;
+  padding-bottom: 20px; */
+   }
     #search-hero-input,
     #search-hero-button {
       display: block;
     }
+/* 
+    footer {
+      width: 100%;
+      position: initial;
+      bottom: 0;
+      margin: 0 auto;
+    } */
 
     #search-hero-input {
     width: 100px;
