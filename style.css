@@ -43,7 +43,10 @@ body {
     width: 100%;
     
   }
-
+ .footer-text {
+   text-decoration: none;
+   color: white;
+ }
   .tabs-ul {
     list-style-type: none;
     background-color: red;
@@ -162,14 +165,15 @@ body {
     font-size: large;
   }
 
-  .heroes {
+  .heroes,
+  .movie-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
 
-  .hero-div {
-    
+  .hero-div, 
+  .movie-container {
     flex-basis: 150px;
   }
 
@@ -194,7 +198,10 @@ body {
      display: inline;
    }
   }
-
+ 
+  .movies-text {
+    margin-top: 50px;
+  }
   @media only screen and (max-height: 512px) {
     body {
       display: flex;
