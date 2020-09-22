@@ -107,9 +107,9 @@ JSON snippet :
 |---|---| ---|
 |Sept 19-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Sept 21| Project Approval | Complete
-|Sept 21-22| Core Application Structure (HTML, CSS, JS) | Incomplete
-|Sept 23| MVP | Incomplete
-|Sept 24| Post MVP + Styling | Incomplete
+|Sept 21-22| Core Application Structure (HTML, CSS, JS) | Complete
+|Sept 23| MVP | Complete
+|Sept 24| Post MVP | Incomplete
 |Sept 25| Presentations | Incomplete
 
 ## Priority Matrix
