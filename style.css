@@ -183,6 +183,7 @@ body {
     #title-image {
       display: none;
     }
+
     p {
      font-size: large;
      text-decoration: underline;
@@ -191,6 +192,22 @@ body {
     #search-hero-button {
     flex-flow: column;
     }
+   
+    #tabs,
+    .tabs-li,
+    .tabs-ul,
+     .tabs-links{
+     display: flex;
+     flex-direction: column;
+     padding: 5px;
+    }
+
+    #tabs {
+     display: flex;
+      float: right;
+     justify-content: space-between;
+    }
+
   }
   
   @media only screen and (max-width: 812px) {
@@ -198,7 +215,7 @@ body {
     #search-hero-button {
       display: block;
     }
-    
+
     #search-hero-input {
     width: 100px;
     margin-left: 20px;
