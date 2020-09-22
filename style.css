@@ -12,9 +12,10 @@ body {
   background-color: black;
   color: white;
 
-  background-image: url('http://i.stack.imgur.com/kx8MT.gif');
-  background-size: cover;
   
+  background-image: url('http://i.stack.imgur.com/kx8MT.gif');
+  background-position: center;
+  /* background-size: auto; */
   /* height: 100vh;
   padding:0;
   margin:0; */
