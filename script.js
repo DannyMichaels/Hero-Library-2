@@ -27,7 +27,6 @@ button.addEventListener('click', async (e) => {
   // console.log(response)
   renderList(movieRes.data.Search)
   removeHero() // putting the remove hero function in the event listener  
-  
   // looping through array
   
   response.forEach((hero) => {
@@ -92,7 +91,7 @@ const renderList = movies => { // create a function called render list, create m
     let names1 = document.createElement('h2')
     names1.className = 'movies-text'
     names1.innerHTML = 'Movies:'
-    // .appendChild(names1)
+    // movieDisplay.appendChild(names1)
     
     const title = document.createElement('h3') // create h3 element and assign it to variable named title
     title.innerHTML = movie.Title // make the variable's text equal to movie.Title data
@@ -113,9 +112,19 @@ const renderList = movies => { // create a function called render list, create m
   })
 }
 
+button.addEventListener('click', async (e) => {
+  e.preventDefault()
+  removeMovie()
+})
 
 
-
+function removeMovie() {
+  const removeMovieDiv = document.querySelector('.movies')
+  // console.log(removeMovieDiv)
+  while (removeMovieDiv.lastChild) {
+   removeMovieDiv.removeChild(removeMovieDiv.lastChild) 
+  }
+}
 
 
 
