@@ -29,7 +29,6 @@ body {
     border: solid 2px white; 
   }
   
-  
   .footer-image {
   height: 25%;
   width: 25%;
@@ -40,35 +39,39 @@ body {
 
   footer {
     width: 100%;
+    
   }
+
+  .tabs-ul {
+    list-style-type: none;
+    background-color: red;
+    color: white;
+    text-align: right;
+    padding: 20px;
+    border: 2px solid white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+  .tabs-li {
+  display: inline;
+  padding: 20px;
+  }
+  .tabs-links {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .tabs-links:hover {
+   text-decoration: underline;
+   text-decoration-color: white;
+   font-size: large;
+    }
+    
   #tabs {
     display: block;
     margin: 0 auto;
     }
-    .tabs-ul {
-      list-style-type: none;
-      background-color: red;
-      color: white;
-      text-align: right;
-      padding: 20px;
-      border: 2px solid white;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-    
-    .tabs-li {
-    display: inline;
-    padding: 20px;
-    }
-    .tabs-links {
-      text-decoration: none;
-      color: white;
-    }
-    
-    .tabs-links:hover {
-     text-decoration: underline;
-     text-decoration-color: white;
-     font-size: large;
-      }
+ 
       
   h1 {
     font-family: 'Anton', sans-serif;
@@ -162,24 +165,6 @@ body {
     flex-basis: 150px;
   }
 
-  #logos {
-    display: flex;
-    justify-content: flex-end;
-    flex-flow: column;
-  }
-
-  /* #marvel-logo {
-    width: 40%;
-    height: 40%;
-    margin-left: auto;
-   }
-   
-   #dc-logo {
-     width: 15%;
-     height: 15%;
-     margin-right: auto;
-     margin-top: -250px;
-   } */
 
    @media only screen and (max-height 600px) {
      body {
@@ -201,8 +186,8 @@ body {
      display: inline;
    }
   }
-   /* I want the buttons to be display-block for low width screens */
-   @media only screen and (max-height: 512px) {
+
+  @media only screen and (max-height: 512px) {
     body {
       display: flex;
     }
