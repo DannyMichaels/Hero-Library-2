@@ -1,6 +1,6 @@
 // init hero domain, key and baseurl
 
-const domain1 = 'https://superheroapi.com/api/'
+const domain1 = 'https://cors-anywhere.herokuapp.com/http://superheroapi.com/api/'
 const apiKey = '1791582447662011'
 const baseUrl = `${domain1}${apiKey}/search/`
 
