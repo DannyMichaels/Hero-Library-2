@@ -83,8 +83,8 @@ JSON snippet :
 
 ## Wireframes
 
-Desktop : ![alt text](https://i.imgur.com/ttjtQTo.png)
-Mobile : ![alt text](https://i.imgur.com/NUe0Ash.png)
+### Desktop : ![alt text](https://i.imgur.com/eCS03TZ.png)
+### Mobile : ![alt text](https://i.imgur.com/zS5deNb.png)
 
 #### MVP 
 
@@ -107,9 +107,9 @@ Mobile : ![alt text](https://i.imgur.com/NUe0Ash.png)
 |---|---| ---|
 |Sept 19-21| Prompt / Wireframes / Priority Matrix / Timeframes | Complete
 |Sept 21| Project Approval | Complete
-|Sept 21-22| Core Application Structure (HTML, CSS, JS) | Incomplete
-|Sept 23| MVP | Incomplete
-|Sept 24| Post MVP + Styling | Incomplete
+|Sept 21-22| Core Application Structure (HTML, CSS, JS) | Complete
+|Sept 23| MVP | Complete
+|Sept 24| Post MVP | Incomplete
 |Sept 25| Presentations | Incomplete
 
 ## Priority Matrix
@@ -127,9 +127,9 @@ Mobile : ![alt text](https://i.imgur.com/NUe0Ash.png)
 | --- | :---: |  :---: | :---: | :---: |
 | Test if API works | 1st | 1hr | N/A | 30min |
 | Creating base data of HTML, CSS and JS | 2nd | 3hr | N/A | 1hr |
-| JS and API functionality | 3rd | 7hr | 2hr | N/A |
-| Website Appearance (CSS) | 4th | 6hr | 1hr| N/A |
-| Debugging and Functionality | 5th | 6hr | N/A | N/A |
+| JS and API functionality | 3rd | 7hr | 3hr | 3hr |
+| Website Appearance (CSS) | 4th | 6hr | 3hr| 3hr |
+| POSTPVM | 5th | 6hr | N/A | N/A |
 | Total | 22hr | N/A | N/A | N/A  |
 
 ## Code Snippet
