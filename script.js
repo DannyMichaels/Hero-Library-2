@@ -9,13 +9,15 @@ const input = document.querySelector('#search-hero-input')
 const button = document.querySelector('#search-hero-button')
 
 
+
 // add event listener
 button.addEventListener('click', async (e) => {
   e.preventDefault()
   let userInput = input.value
   const res = await axios.get(`${baseUrl}${userInput}`)
   const response = res.data.results
-  console.log(response)
+  // console.log(response)
+  removeHero() // putting the remove hero function in the event listener
 
   // looping through array
   response.forEach((hero) => {
@@ -23,6 +25,7 @@ button.addEventListener('click', async (e) => {
     // console.log(hero.image.url)
     const heroesDiv = document.querySelector('.heroes') // div for heroes
     const heroDiv = document.createElement('div') // creating div element for each hero
+    heroDiv.classList = 'hero-div'
     heroesDiv.append(heroDiv) // append the hero to the heroes div
 
 
@@ -60,16 +63,10 @@ button.addEventListener('click', async (e) => {
   })
 })
 
-
-// const heroBio = hero.biography
-    
-// heroBio.forEach((bio) => {
-  
-//   const appearance = bio.appearance
-//   const heroAppearancePara = document.createElement('p')
-
-// heroAppearancePara.textContent = `${appearance}`
-// heroDiv.append(heroAppearancePara) ›
-
-  
-// }) 
+function removeHero() {
+  const removeDiv = document.querySelector('.heroes')
+  // console.log(removeDiv)
+  while (removeDiv.lastChild) {
+   removeDiv.removeChild(removeDiv.lastChild) 
+  }
+}

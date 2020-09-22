@@ -45,6 +45,10 @@ body {
   h3 {
     display: flex;
     margin-left: 50px;
+    text-decoration: underline;
+    text-decoration-color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
   }
 
   #title-image{
@@ -54,13 +58,18 @@ body {
   }
  
   p {
-  font-size: medium;
+  font-size: large;
+    margin: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: white;
   }
  
   .hero-img {
     width: 250px;
     height: 250px;
-    justify-content: center;
+    justify-content: center;  
+    margin: 20px;
+    border: 2px solid white;
   }
 
   .search-container {
@@ -103,8 +112,15 @@ body {
     border: 3px dotted white;
   }
 
-  #heroes {
-    height: 10px;
+  .heroes {
+    display: flex;
+    flex-flow: row;
+  }
+
+  .hero-div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 150px;
   }
 
   #logos {
@@ -175,4 +191,11 @@ body {
     width: 100px;
     margin-left: 20px;
     }
+
+
+  .heroes {
+    display: flex;
+    flex-flow: column;
+    margin: 10px;
   }
+}
