@@ -83,7 +83,7 @@ function removeHero() {
    removeDiv.removeChild(removeDiv.lastChild) 
   }
 }
-const movieDisplay = document.querySelector(".movie-list") // assign class .movie-list to a variable named movieDisplay
+const movieDisplay = document.querySelector(".movies") // assign class .movie-list to a variable named movieDisplay
 
 const renderList = movies => { // create a function called render list, create movies paramater
   movies.forEach(movie => { // forEach loop to movies. movie is array item
@@ -91,18 +91,20 @@ const renderList = movies => { // create a function called render list, create m
     movieContainer.className = 'movie-container' // give class name to movie container
     let names1 = document.createElement('h2')
     names1.className = 'movies-text'
-    names1.innerHTML = 'Movies'
-    // movieDisplay.appendChild(names1)
+    names1.innerHTML = 'Movies:'
+    // .appendChild(names1)
+    
     const title = document.createElement('h3') // create h3 element and assign it to variable named title
     title.innerHTML = movie.Title // make the variable's text equal to movie.Title data
     movieContainer.appendChild(title) // append title h3 to the container div
     
     const year = document.createElement('p') // create a paragraph element, assign it to a variable named year
-    year.innerHTML = movie.year // make year's text equal to the movies year
-    // movieContainer.appendChild(year)  // append the year to the container div
+    year.innerHTML = 'Release Date: ' + movie.Year // make year's text equal to the movies year
+    movieContainer.appendChild(year)  // append the year to the container div
     
     if (movie.Poster !== "N/A") { // thanks to this if statement, error will go away 
       const image = document.createElement('img') // create a image element, assign it to a variable named 'image'
+      image.className = 'movie-img'
       image.setAttribute('src', movie.Poster) // set attribute to the image variable, source, movie.Poster.
       movieContainer.appendChild(image) // append the image to the div
     }

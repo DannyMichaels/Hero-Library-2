@@ -93,7 +93,7 @@ body {
     text-decoration: underline;
     text-decoration-color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: larger;
+    font-size: x-large;
   }
 
   #title-image{
@@ -111,7 +111,8 @@ body {
   h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
-  .hero-img {
+  .hero-img,
+  .movie-img {
     width: 250px;
     height: 250px;
     justify-content: center;  
@@ -120,7 +121,8 @@ body {
     opacity: 95%;
   }
 
-  .hero-img:hover{
+  .hero-img:hover,
+   .movie-img:hover {
     opacity: 200%;
     width: 270px;
     height: 270px;
@@ -166,7 +168,7 @@ body {
   }
 
   .heroes,
-  .movie-list {
+  .movies{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
