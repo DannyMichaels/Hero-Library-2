@@ -16,7 +16,7 @@ button.addEventListener('click', async (e) => {
   let userInput = input.value
   const res = await axios.get(`${baseUrl}${userInput}`)
   const response = res.data.results
-  // console.log(response)
+  console.log(response)
   removeHero() // putting the remove hero function in the event listener  
 
   // looping through array
@@ -52,10 +52,13 @@ button.addEventListener('click', async (e) => {
     // console.log(heroAppearance)
 
     const heroStats = hero.powerstats
-    console.log(heroStats)
+    // console.log(heroStats)
+
+    const heroWork = hero.work 
+    console.log(heroWork.occupation)
     const heroPara = document.createElement('p')
     
-    heroPara.innerText = 'Publisher: ' + heroBio.publisher + '\n Aliases: ' + heroBio.aliases + '\n Gender: ' + heroAppearance.gender  + "\n Stats: " + "\n Combat: " + heroStats.combat + "\n Durability: " + heroStats.durability  + "\n Power: " + heroStats.power + "\n Speed: " + heroStats.speed + "\n Strength: " + heroStats.strength 
+    heroPara.innerText =   'Publisher: ' + heroBio.publisher + '\n Gender: ' + heroAppearance.gender  + '\n Occupation: ' + heroWork.occupation + "\n Stats: " + "\n Combat: " + heroStats.combat + "\n Durability: " + heroStats.durability  + "\n Power: " + heroStats.power + "\n Speed: " + heroStats.speed + "\n Strength: " + heroStats.strength + '\n Aliases: ' + heroBio.aliases  
     heroDiv.append(heroPara) 
 
     input.value = '' // this resets user input once search button is clicked

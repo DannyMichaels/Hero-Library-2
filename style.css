@@ -114,8 +114,14 @@ body {
     justify-content: center;  
     margin: 20px;
     border: 2px solid white;
+    opacity: 95%;
   }
 
+  .hero-img:hover{
+    opacity: 200%;
+    width: 270px;
+    height: 270px;
+  }
   .search-container {
     display: flex;
     justify-content: center;
@@ -274,4 +280,17 @@ flex-flow: row wrap;
 .api-cred:hover{
 font-size: larger;
 text-decoration: underline;
+}
+
+
+/* CONTACT ME PAGE */
+
+.contact-me-a {
+  text-decoration: none;
+  color: white;
+}
+
+.contact-me-a:hover {
+text-decoration: underline;
+font-size: larger;
 }
