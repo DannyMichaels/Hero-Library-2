@@ -19,10 +19,12 @@ button.addEventListener('click', async (e) => {
 
   // looping through array
   response.forEach((hero) => {
+    
     // console.log(hero.image.url)
     const heroesDiv = document.querySelector('.heroes') // div for heroes
     const heroDiv = document.createElement('div') // creating div element for each hero
     heroesDiv.append(heroDiv) // append the hero to the heroes div
+
 
     // creating name appearance
 
@@ -41,14 +43,16 @@ button.addEventListener('click', async (e) => {
     
     
     const heroBio = hero.biography
-    console.log(heroBio)
+    // console.log(heroBio)
     
     const heroAppearance = hero.appearance
-    console.log(heroAppearance)
+    // console.log(heroAppearance)
 
+    const heroStats = hero.powerstats
+    console.log(heroStats)
     const heroPara = document.createElement('p')
     
-    heroPara.innerText = 'Publisher: ' + heroBio.publisher + '\n Aliases: ' + heroBio.aliases + '\n Gender: ' + heroAppearance.gender
+    heroPara.innerText = 'Publisher: ' + heroBio.publisher + '\n Aliases: ' + heroBio.aliases + '\n Gender: ' + heroAppearance.gender  + "\n Stats: " + "\n Combat: " + heroStats.combat + "\n Durability: " + heroStats.durability  + "\n Power: " + heroStats.power + "\n Speed: " + heroStats.speed + "\n Strength: " + heroStats.strength 
     heroDiv.append(heroPara) 
 
     input.value = '' // this resets user input once search button is clicked
