@@ -1,11 +1,11 @@
 // init hero domain, key and baseurl
 
-const domain1 = 'https://cors-anywhere.herokuapp.com/http://superheroapi.com/api/'
+const domain1 = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/'
 const apiKey = '1791582447662011'
 const baseUrl = `${domain1}${apiKey}/search/`
 
 // movie domian, key and baseurl
-const DOMAIN = 'http://www.omdbapi.com/';
+const DOMAIN = 'https://www.omdbapi.com/';
 const API_KEY = '591fa8f4'
 const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`;
 
