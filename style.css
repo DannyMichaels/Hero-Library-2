@@ -1,3 +1,9 @@
+* {  
+  margin: 0;
+  padding: 0;
+
+  } 
+
 body {
   display: flex;
   justify-content: center;
@@ -15,6 +21,26 @@ body {
 
   }
 
+  #footer-container {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border: solid 2px white; 
+  }
+  
+  
+  .footer-image {
+  height: 25%;
+  width: 25%;
+  margin: auto;
+  /* margin-bottom: 10px; */
+  margin-left: 0;
+  }
+
+  footer {
+    width: 100%;
+  }
   #tabs {
     display: block;
     margin: 0 auto;
@@ -50,6 +76,7 @@ body {
     padding: 20px;
     background-color: red;
     text-transform: uppercase;
+    margin: 30px;
   }
 
   h3 {
@@ -175,7 +202,7 @@ body {
    }
   }
    /* I want the buttons to be display-block for low width screens */
-   @media only screen and (max-height: 600px) {
+   @media only screen and (max-height: 512px) {
     body {
       display: flex;
     }
@@ -203,9 +230,8 @@ body {
     }
 
     #tabs {
-     display: flex;
-      float: right;
-     justify-content: space-between;
+     display: block;
+     margin: 0 auto;
     }
 
   }
@@ -221,12 +247,27 @@ body {
     margin-left: 20px;
     }
 
-
+  #title-image{
+   display: none;
+ }
   .heroes {
     display: flex;
     flex-flow: column;
     margin: 10px;
   }
+  #tabs,
+  .tabs-li,
+  .tabs-ul,
+   .tabs-links{
+   display: flex;
+   flex-direction: column;
+   padding: 5px;
+  }
+
+  #tabs {
+   display: block;
+   margin: 0 auto;
+  } 
 }
 
 /* ABOUT ME PAGE */
