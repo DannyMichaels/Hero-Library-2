@@ -35,19 +35,28 @@ button.addEventListener('click', async (e) => {
   res.data.response === "error" ? null : renderList(movieRes.data.Search)
 
 
+ 
   removeHero() // putting the remove hero function in the event listener  
-
   const heroesDiv = document.querySelector('.heroes') // div for heroes
 
   let heroData = document.createElement('h3')
   heroData.className = 'hero-data'
   heroData.innerHTML = 'Hero Data:'
   heroesDiv.appendChild(heroData)
+  if (res.data.response === "error") {
+    // console.log('OMG!')
+    heroData.innerHTML = 'NO HERO FOUND!'
+    alert("No hero found, try a different name!")
+  } 
+    else {  
+      // console.log('Yipee!')
+  }  
 
   // looping through array
   response.forEach((hero) => {
 
     // const heroesDiv = document.querySelector('.heroes') // div for heroes
+   
     const heroDiv = document.createElement('div') // creating div element for each hero
     heroDiv.classList = 'hero-div'
     heroesDiv.append(heroDiv) // append the hero to the heroes div
@@ -140,5 +149,15 @@ function removeMovie() {
   }
 }
 
+// button.addEventListener('click', async (e) => {
+//   e.preventDefault()
+//   removeTitle()
+// })
 
+function removeTitle() {
+  const removeTitleDiv = document.querySelector('.hero-data')
+  while (removeTitleDiv.lastChild) {
+    removeTitleDiv.removeChild(removeTitleDiv.lastChild)
+  }
+}
 
