@@ -94,6 +94,12 @@ body {
     margin: 30px;
   }
 
+
+  .names-movie{
+    margin-top: 50px;
+     text-transform: uppercase; 
+   }
+
   h3 {
     display: flex;
     margin-left: 50px;
@@ -117,7 +123,7 @@ body {
   }
   h2 {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  }
+}
   .hero-img,
   .movie-img {
     width: 250px;
@@ -128,6 +134,12 @@ body {
     opacity: 95%;
   }
 
+  .movies {
+    margin-top: 30px;
+  }
+  .names-movie{
+
+  }
   .hero-img:hover,
    .movie-img:hover {
     opacity: 200%;
@@ -181,7 +193,8 @@ body {
     flex-flow: row wrap;
     justify-content: center;
   }
-/* 
+
+  /* 
   .heroes {
     display: flex;
     flex-flow: column wrap;
@@ -288,7 +301,8 @@ body {
   #title-image{
    display: none;
  }
-  .heroes {
+  .heroes,
+  .movies {
     display: flex;
     flex-flow: column;
     margin: 10px;
