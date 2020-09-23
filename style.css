@@ -44,6 +44,11 @@ body {
   .footer-image a img{
     width: 24%;
   }
+
+  .footer-image:hover{
+    width: 25%;
+  }
+  
   footer {
     width: 100%;
     position: initial;
@@ -134,12 +139,11 @@ body {
     opacity: 95%;
   }
 
+
   .movies {
     margin-top: 30px;
   }
-  .names-movie{
-
-  }
+  
   .hero-img:hover,
    .movie-img:hover {
     opacity: 200%;
@@ -193,18 +197,6 @@ body {
     flex-flow: row wrap;
     justify-content: center;
   }
-
-  /* 
-  .heroes {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-end;
-  } */
-  /* .movies{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: flex-start;
-  }  */
 
   .hero-div, 
   .movie-container {
