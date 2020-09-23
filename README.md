@@ -125,11 +125,11 @@ JSON snippet :
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
 | Test if API works | 1st | 1hr | N/A | 30min |
-| Creating base data of HTML, CSS and JS | 2nd | 3hr | N/A | 1hr |
+| Creating base data of HTML, CSS and JS | 2nd | 3hr | 1hr| 1hr |
 | JS and API functionality | 3rd | 7hr | 3hr | 3hr |
-| Website Appearance (CSS) | 4th | 6hr | 3hr| 3hr |
-| POSTPVM | 5th | 6hr | N/A | N/A |
-| Total | 22hr | N/A | N/A | N/A  |
+| Website Appearance (CSS) | 4th | 6hr | 4hr| 4hr |
+| POSTPVM | 5th | 6hr | 4hr | 4hr |
+| Total | N/A | N/A | N/A | 12hr  |
 
 ## Code Snippet
 
