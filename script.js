@@ -1,6 +1,6 @@
 // init hero domain, key and baseurl
 
-const domain1 = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/'
+const domain1 = 'https://superheroapi.com/api/'
 const apiKey = '1791582447662011'
 const baseUrl = `${domain1}${apiKey}/search/`
 
@@ -27,8 +27,8 @@ button.addEventListener('click', async (e) => {
   // console.log(response)
   renderList(movieRes.data.Search)
   removeHero() // putting the remove hero function in the event listener  
-  // looping through array
   
+  // looping through array
   response.forEach((hero) => {
     
     // console.log(hero.image.url)
@@ -36,7 +36,6 @@ button.addEventListener('click', async (e) => {
     const heroDiv = document.createElement('div') // creating div element for each hero
     heroDiv.classList = 'hero-div'
     heroesDiv.append(heroDiv) // append the hero to the heroes div
-
 
     // creating name appearance
 
@@ -82,6 +81,8 @@ function removeHero() {
    removeDiv.removeChild(removeDiv.lastChild) 
   }
 }
+
+
 const movieDisplay = document.querySelector(".movies") // assign class .movie-list to a variable named movieDisplay
 
 const renderList = movies => { // create a function called render list, create movies paramater
