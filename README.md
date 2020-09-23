@@ -97,7 +97,6 @@ JSON snippet :
 
 #### PostMVP  
 
-- Create a random hero feature, a button will make a random hero with the additional data appear.
 - Add a movie feature, a movie related to the searched hero will appear next to the original search data.
 
 ## Project Schedule 
