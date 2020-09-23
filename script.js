@@ -22,12 +22,19 @@ button.addEventListener('click', async (e) => {
   const res = await axios.get(`${baseUrl}${userInput}`)
   const response = res.data.results // for hero search
   const movieRes = await axios.get(`${BASE_URL}s=${userInput}`) // for movie search
+  if (res.data.response === "error") { // if there isn't a hero search result, do not show movie
+  } else {  // else, if it does not have 'error', render the movie results
+    renderList(movieRes.data.Search)  // render the movie results
+  }
+  
+  // console.log(res)
+  
   // const movieResponse = movieRes.data.Search
   // console.log(movieResponse)
   // console.log(response)
-  renderList(movieRes.data.Search)
+  // renderList(movieRes.data.Search)
   removeHero() // putting the remove hero function in the event listener  
-  
+      // renderList(movieRes.data.Search)
   // looping through array
   response.forEach((hero) => {
     

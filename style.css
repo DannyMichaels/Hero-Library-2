@@ -174,12 +174,24 @@ body {
     font-size: large;
   }
 
+  
   .heroes,
   .movies{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
   }
+/* 
+  .heroes {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+  } */
+  /* .movies{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+  }  */
 
   .hero-div, 
   .movie-container {
