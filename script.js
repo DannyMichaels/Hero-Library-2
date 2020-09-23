@@ -22,20 +22,22 @@ button.addEventListener('click', async (e) => {
   const res = await axios.get(`${baseUrl}${userInput}`)
   const response = res.data.results // for hero search
   const movieRes = await axios.get(`${BASE_URL}s=${userInput}`) // for movie search
-  if (res.data.response === "error") { // if there isn't a hero search result, do not show movie
-  } else {  // else, if it does not have 'error', render the movie results
-    renderList(movieRes.data.Search)  // render the movie results
-  }
+ 
+  // movie rendering conditional, shay helped me with this.
+
+  // if (res.data.response === "error") { // if there isn't a hero search result, do not show movie
+  // } else {  // else, if it does not have 'error', render the movie results
+  //   renderList(movieRes.data.Search)  // render the movie results
+  // }
+
+  // refactor the movie rendering conditional to a ternary operator, it just looks nicer 
+
+  res.data.response === "error" ? null : renderList(movieRes.data.Search)
   
-  // console.log(res)
-  
-  // const movieResponse = movieRes.data.Search
-  // console.log(movieResponse)
-  // console.log(response)
-  // renderList(movieRes.data.Search)
+ 
   removeHero() // putting the remove hero function in the event listener  
-      // renderList(movieRes.data.Search)
-  // looping through array
+  
+   // looping through array
   response.forEach((hero) => {
     
     // console.log(hero.image.url)
@@ -94,12 +96,13 @@ const movieDisplay = document.querySelector(".movies") // assign class .movie-li
 
 const renderList = movies => { // create a function called render list, create movies paramater
   movies.forEach(movie => { // forEach loop to movies. movie is array item
+    // const movieSection = document.createElement('section')
     const movieContainer = document.createElement('div') // create a variable for the container div
     movieContainer.className = 'movie-container' // give class name to movie container
     let names1 = document.createElement('h2')
-    names1.className = 'movies-text'
+    // movieSection.className = 'movies-text'
     names1.innerHTML = 'Movies:'
-    // movieDisplay.appendChild(names1)
+    // movieSection.appendChild(names1)
     
     const title = document.createElement('h3') // create h3 element and assign it to variable named title
     title.innerHTML = movie.Title // make the variable's text equal to movie.Title data
