@@ -133,13 +133,28 @@ JSON snippet :
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of and a brief description.  
+Happy with this function, it removes the previous search results once you enter it.
 
 ```
-function reverse(string) {
-	// here is the code to reverse a string of text
+function removeHero() {
+  const removeDiv = document.querySelector('.heroes')
+    while (removeDiv.lastChild) {
+    removeDiv.removeChild(removeDiv.lastChild)
+  }
 }
+removeHero()
+
+function removeMovie() {
+  const removeMovieDiv = document.querySelector('.movies')
+  while (removeMovieDiv.lastChild) {
+    removeMovieDiv.removeChild(removeMovieDiv.lastChild)
+  }
+}
+
+removeMovie()
 ```
 
 ## Change Log
- Use this section to document what changes were made and the reasoning behind those changes.  
+
+- Sep 22, 2020 : MVP feature complete
+- Sep 23, 2020 : POSTMVP feature complete
