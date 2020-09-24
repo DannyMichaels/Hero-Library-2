@@ -127,9 +127,9 @@ JSON snippet :
 | Test if API works | 1st | 1hr | N/A | 30min |
 | Creating base data of HTML, CSS and JS | 2nd | 3hr | 1hr| 1hr |
 | JS and API functionality | 3rd | 7hr | 3hr | 3hr |
-| Website Appearance (CSS) | 4th | 6hr | 4hr| 4hr |
-| POSTPVM | 5th | 6hr | 4hr | 4hr |
-| Total | N/A | N/A | N/A | 12hr  |
+| Website Appearance (CSS) | 4th | 6hr | 5hr| 5hr |
+| POSTPVM | 5th | 6hr | 6hr | 6hr |
+| Total | N/A | N/A | N/A | 15hr |
 
 ## Code Snippet
 
@@ -158,3 +158,4 @@ removeMovie()
 
 - Sep 22, 2020 : MVP feature complete
 - Sep 23, 2020 : POSTMVP feature complete
+- Sep 24, 2020 : some CSS flaws fixed.
