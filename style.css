@@ -16,7 +16,7 @@ body {
   align-items: center;
   background-color: black;
   color: white;
-  margin: 0 0 100px;
+  margin: 0 0 150px;
   background-image: url('http://i.stack.imgur.com/kx8MT.gif');
   background-position: center;
 }
@@ -329,16 +329,23 @@ a{
   font-size: larger;
 }
  
+.by-the-way {
+  background-image: linear-gradient(to left, #ee82ee, #4b0082 , #0000ff, #008000, #ffff00, #ffa500, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+
 .api-cred{
   color: white;
-display: flex;
-flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .api-cred:hover{
 font-size: larger;
 text-decoration: underline;
 }
+
 
 .contact-me-a {
   text-decoration: none;

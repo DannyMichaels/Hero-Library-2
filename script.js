@@ -1,27 +1,33 @@
 
-const domain1 = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/'
-const apiKey = '1791582447662011'
-const baseUrl = `${domain1}${apiKey}/search/`
+// HERO API
 
-const domain = 'https://www.omdbapi.com/';
+const domain = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/'
+const apiKey = '1791582447662011'
+const baseUrl = `${domain}${apiKey}/search/`
+
+
+//OMDB
+
+const omDBdomain = 'https://www.omdbapi.com/';
 const api_key = '591fa8f4'
-const base_url = `${domain}?apikey=${api_key}&`;
+const omDBurl = `${omDBdomain}?apikey=${api_key}&`;
 
 const input = document.querySelector('#search-hero-input')
 const button = document.querySelector('#search-hero-button')
 
-
+// ----------
 
   button.addEventListener('click', async (e) => {
   e.preventDefault()
   let userInput = input.value
   const res = await axios.get(`${baseUrl}${userInput}`)
   const response = res.data.results 
-  const movieRes = await axios.get(`${base_url}s=${userInput}`) 
+  const movieRes = await axios.get(`${omDBurl}s=${userInput}`) 
 
   res.data.response === "error" ? null : renderList(movieRes.data.Search)
 
   removeHero()
+
   const heroesDiv = document.querySelector('.heroes')
 
   let heroData = document.createElement('h3')
