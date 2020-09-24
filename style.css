@@ -165,11 +165,13 @@ a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     border: 2px solid white;
     text-transform: uppercase;
+    text-align: center;
   }
 
   ::placeholder{  
  color: white;
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ text-align: center;
   }
 
   button {
@@ -330,9 +332,9 @@ a{
 }
  
 .by-the-way {
-  background-image: linear-gradient(to left, #ee82ee, #4b0082 , #0000ff, #008000, #ffff00, #ffa500, #ff0000);
+  background-image: linear-gradient(to left , #ee82ee, #4b0082 , #0000ff, #008000, #ffff00, #ffa500, #ff0000);
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;   
 }
 
 .api-cred{

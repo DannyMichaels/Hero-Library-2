@@ -101,7 +101,7 @@ const renderList = movies => {
     const year = document.createElement('p') 
     year.innerHTML = 'Release Date: ' + movie.Year 
     movieContainer.appendChild(year)  
-
+  
     if (movie.Poster !== "N/A") { 
       const image = document.createElement('img') 
       image.className = 'movie-img'
