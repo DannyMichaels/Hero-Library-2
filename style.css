@@ -12,18 +12,9 @@ body {
   background-color: black;
   color: white;
  
-  /* width: 616px;
-  padding: 5px 14px 5px 14px;
-  margin: 0 auto;
-  padding-bottom: 20px; */
-  
   background-image: url('http://i.stack.imgur.com/kx8MT.gif');
   background-position: center;
-  /* background-size: auto; */
-  /* height: 100vh;
-  padding:0;
-  margin:0; */
-
+  
   }
 
   #footer-container {
@@ -36,9 +27,8 @@ body {
   
   .footer-image{
     width: 25%;
-  margin: auto;
-  /* margin-bottom: 10px; */
-  margin-left: 0;
+    margin: auto;
+    margin-left: 0;
   }
 
   .footer-image a img{
@@ -100,9 +90,9 @@ body {
   }
 
 
-  .names-movie{
+  .names-movie {
     margin-top: 50px;
-     text-transform: uppercase; 
+    text-transform: uppercase; 
    }
 
   h3 {
@@ -169,7 +159,7 @@ body {
     text-transform: uppercase;
   }
 
-  ::placeholder{  /* got this from google, "how to change color of placeholder" */
+  ::placeholder{  
  color: white;
  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
@@ -229,18 +219,17 @@ body {
     margin-top: 50px;
   }
   @media only screen and (max-height: 512px) {
-    body {
-      /* display: flex; */
-       /* width: 616px;
-  padding: 5px 14px 5px 14px;
-  margin: 0 auto;
-  padding-bottom: 20px; */
-    }
   
     #title-image {
       display: none;
     }
-    
+    .heroes,
+    .movies {
+      display: flex;
+      flex-flow: column;
+      margin: 10px;
+    }
+
     p {
      font-size: large;
      text-decoration: underline;
@@ -277,13 +266,7 @@ body {
     #search-hero-button {
       display: block;
     }
-/* 
-    footer {
-      width: 100%;
-      position: initial;
-      bottom: 0;
-      margin: 0 auto;
-    } */
+
 
     #search-hero-input {
     width: 100px;
@@ -296,9 +279,11 @@ body {
   .heroes,
   .movies {
     display: flex;
-    flex-flow: column;
+    flex-flow: column wrap;
     margin: 10px;
+    justify-content: flex-start;
   }
+ 
   #tabs,
   .tabs-li,
   .tabs-ul,
@@ -314,8 +299,6 @@ body {
    margin: 0 auto;
   } 
 }
-
-/* ABOUT ME PAGE */
 
 .about-me-text {
   display: flex;
@@ -333,9 +316,6 @@ flex-flow: row wrap;
 font-size: larger;
 text-decoration: underline;
 }
-
-
-/* CONTACT ME PAGE */
 
 .contact-me-a {
   text-decoration: none;
