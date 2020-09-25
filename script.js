@@ -1,21 +1,16 @@
 
-// HERO API
 
-const domain = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/'
-const apiKey = '1791582447662011'
-const baseUrl = `${domain}${apiKey}/search/`
+const domain = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/' 
+const apiKey = '1791582447662011'  
+const baseUrl = `${domain}${apiKey}/search/` 
 
 
-//OMDB
-
-const omDBdomain = 'https://www.omdbapi.com/';
-const api_key = '591fa8f4'
-const omDBurl = `${omDBdomain}?apikey=${api_key}&`;
+const omDBdomain = 'https://www.omdbapi.com/'; 
+const api_key = '591fa8f4' 
+const omDBurl = `${omDBdomain}?apikey=${api_key}&`; 
 
 const input = document.querySelector('#search-hero-input')
 const button = document.querySelector('#search-hero-button')
-
-// ----------
 
   button.addEventListener('click', async (e) => {
   e.preventDefault()
