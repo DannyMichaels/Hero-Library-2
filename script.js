@@ -1,27 +1,27 @@
 
 
-const domain = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/' 
-const apiKey = '1791582447662011'  
-const baseUrl = `${domain}${apiKey}/search/` 
+const domain = 'https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/'
+const apiKey = '1791582447662011'
+const baseUrl = `${domain}${apiKey}/search/`
 
 
-const omDBdomain = 'https://www.omdbapi.com/'; 
-const api_key = '591fa8f4' 
-const omDBurl = `${omDBdomain}?apikey=${api_key}&`; 
+const omDBdomain = 'https://www.omdbapi.com/';
+const api_key = '591fa8f4'
+const omDBurl = `${omDBdomain}?apikey=${api_key}&`;
 
 const input = document.querySelector('#search-hero-input')
 const button = document.querySelector('#search-hero-button')
 
-  button.addEventListener('click', async (e) => {
-  e.preventDefault()
-  let userInput = input.value
-  const res = await axios.get(`${baseUrl}${userInput}`)
-  const response = res.data.results 
-  const movieRes = await axios.get(`${omDBurl}s=${userInput}`) 
+button.addEventListener('click', async (e) => { // this event listener listens to the submit button click.
+  e.preventDefault() // prevents page from reloading once search submitted
+  let userInput = input.value // takes user input
+  const res = await axios.get(`${baseUrl}${userInput}`) // domain for superhero api
+  const response = res.data.results
+  const movieRes = await axios.get(`${omDBurl}s=${userInput}`) // domain for omdb
 
-  res.data.response === "error" ? null : renderList(movieRes.data.Search)
+  res.data.response === "error" ? null : renderList(movieRes.data.Search) // if no hero search results appear, do not return movie results.
 
-  removeHero()
+  removeHero() 
 
   const heroesDiv = document.querySelector('.heroes')
 
@@ -29,14 +29,14 @@ const button = document.querySelector('#search-hero-button')
   heroData.className = 'hero-data'
   heroData.innerHTML = 'Hero Data:'
   heroesDiv.appendChild(heroData)
-  if (res.data.response === "error") {
+  if (res.data.response === "error") {  // if no search results found, give an alert message saying "no hero found"
     heroData.innerHTML = 'NO HERO FOUND!'
     alert("No hero found, try a different name!")
   } else {
 
   }
 
-  response.forEach((hero) => {
+  response.forEach((hero) => { // looping through array
 
 
     const heroDiv = document.createElement('div')
@@ -69,52 +69,52 @@ const button = document.querySelector('#search-hero-button')
   })
 })
 
-function removeHero() {
+function removeHero() { // This function removes heroes once a new search has been submitted
   const removeDiv = document.querySelector('.heroes')
-    while (removeDiv.lastChild) {
+  while (removeDiv.lastChild) { 
     removeDiv.removeChild(removeDiv.lastChild)
   }
 }
 
 
-const movieDisplay = document.querySelector(".movies") 
+const movieDisplay = document.querySelector(".movies") // select the class .movies and assign it to movieDisplay
 
-const renderList = movies => { 
-  let names1 = document.createElement('h3')
-  names1.className = 'names-movie'
-  names1.innerHTML = 'Movie/Series:'
-  movieDisplay.appendChild(names1)
+const renderList = movies => {
+  let names1 = document.createElement('h3') // assign h3 to variable names1
+  names1.className = 'names-movie'  // give names1 h3 a class name
+  names1.innerHTML = 'Movie/Series:' // give names1 text "Movie/Series:"
+  movieDisplay.appendChild(names1) // append the h3 to the movie 
 
-  movies.forEach(movie => { 
-    const movieContainer = document.createElement('div') 
-    movieContainer.className = 'movie-container'  
+  movies.forEach(movie => {  // looping through the array
+    const movieContainer = document.createElement('div') // create div element and assign it to a variable
+    movieContainer.className = 'movie-container' // give it a class and a class name
 
-    const title = document.createElement('h3') 
-    title.innerHTML = movie.Title 
-    movieContainer.appendChild(title) 
+    const title = document.createElement('h3') // creating h3 for movie title
+    title.innerHTML = movie.Title   // text is going to be what the api assigned as title
+    movieContainer.appendChild(title) // append the title to the movie container
 
-    const year = document.createElement('p') 
-    year.innerHTML = 'Release Date: ' + movie.Year 
-    movieContainer.appendChild(year)  
-  
-    if (movie.Poster !== "N/A") { 
-      const image = document.createElement('img') 
-      image.className = 'movie-img'
-      image.setAttribute('src', movie.Poster) 
-      movieContainer.appendChild(image) 
+    const year = document.createElement('p') // create element of p and assign it to the variable
+    year.innerHTML = 'Release Date: ' + movie.Year  // text of year
+    movieContainer.appendChild(year) // append year data to container
+
+    if (movie.Poster !== "N/A") { // gets rid of error message when movie image not found
+      const image = document.createElement('img') // create element img assign it to a variable
+      image.className = 'movie-img'   // give variable a class
+      image.setAttribute('src', movie.Poster) // find the image url from api and assign it to the variable
+      movieContainer.appendChild(image) //append image to the movie container
     }
 
-    movieDisplay.appendChild(movieContainer) 
+    movieDisplay.appendChild(movieContainer) // append the movie container to movie list
   })
 }
 
-button.addEventListener('click', async (e) => {
-  e.preventDefault()
+button.addEventListener('click', async (e) => {  // this event listener removes movies once a new search has been submitted
+  e.preventDefault() 
   removeMovie()
 })
 
 
-function removeMovie() {
+function removeMovie() { // this function removes movies once a new search has been submitted
   const removeMovieDiv = document.querySelector('.movies')
 
   while (removeMovieDiv.lastChild) {
@@ -122,7 +122,7 @@ function removeMovie() {
   }
 }
 
-function removeTitle() {
+function removeTitle() {  // this removes "hero data" text once new search result submitted
   const removeTitleDiv = document.querySelector('.hero-data')
   while (removeTitleDiv.lastChild) {
     removeTitleDiv.removeChild(removeTitleDiv.lastChild)
