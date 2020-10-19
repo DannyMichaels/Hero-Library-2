@@ -20,7 +20,12 @@ body {
   background-image: url('http://i.stack.imgur.com/kx8MT.gif');
   background-position: center;
 }
-
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
   #footer-container {
     background-color: red;
     color: white;
@@ -66,12 +71,16 @@ a{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   }
   
+  
   .tabs-li {
-  display: inline;
-  padding: 20px;
+  display: inline-block;
+  padding: 0;
   }
+
   .tabs-links {
+    display: inline-block;
     text-decoration: none;
+    padding: 10px 20px;
     color: white;
   }
   
@@ -82,11 +91,28 @@ a{
     }
     
   #tabs {
-    display: block;
-    margin: 0 auto;
-    }
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
  
-      
+ .hamburger {
+  display: none;
+  text-transform: uppercase;
+  border: 2px solid white;
+  background-color: red;
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 12px;
+  margin-left: 130px;
+  width: 50px;
+  cursor: pointer;
+  }
+
+  .hamburger:focus {
+    outline: none;
+  }
+
   h1 {
     font-family: 'Anton', sans-serif;
     border: 2px solid white;
@@ -174,21 +200,7 @@ a{
  text-align: center;
   }
 
-  button {
-    text-transform: uppercase;
-    border: 2px solid white;
-    background-color: red;
-    color: white;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    padding: 12px;
-    margin: 20px;
-    width: 120px
-  }
-
-  button:hover {
-    text-decoration: underline;
-    font-size: large;
-  }
+  
 
   
   .heroes,
@@ -223,6 +235,22 @@ a{
    #search-hero-button {
      display: inline;
    }
+  }
+ #search-hero-button {
+  
+    text-transform: uppercase;
+    border: 2px solid white;
+    background-color: red;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 12px;
+    margin: 20px;
+    width: 120px;
+  }
+
+  #search-hero-button:hover {
+    text-decoration: underline;
+    font-size: large;
   }
  
   .movies-text {
@@ -267,10 +295,7 @@ a{
   }
   
   @media only screen and (max-width: 812px) {
-   body {
-  
-
-   }
+   
     #search-hero-input,
     #search-hero-button {
       display: block;
@@ -294,19 +319,18 @@ a{
   }
  
   #tabs,
-  .tabs-li,
-  .tabs-ul,
-  .tabs-links{
+  {
    display: flex;
-   flex-direction: column;
-   padding: 5px;
-   text-align: center;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-between;
+   padding: 15px;
   }
 
-  #tabs {
+  /* #tabs {
    display: block;
    margin: 0 auto;
-  } 
+  }  */
  
  
   .footer-image{
@@ -358,4 +382,35 @@ text-decoration: underline;
 .contact-me-a:hover {
 text-decoration: underline;
 font-size: larger;
+}
+
+@media screen and (max-width: 767px) {
+
+
+  .tabs-ul {
+  display: none;
+  flex-direction: column;
+  width: 20%;
+  text-align: right;
+  margin-left: 260px;
+  margin-top: 10px; 
+}
+
+.tabs-ul.show{
+  display: flex;
+
+
+}
+
+.hamburger {
+  display: block;
+  margin-left: 320px;
+  padding: 10px 30px;
+}
+
+
+.hamburger-image {
+  margin-left: -25px;
+}
+
 }

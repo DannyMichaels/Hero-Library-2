@@ -158,6 +158,7 @@ removeMovie()
 
 ## Change Log
 
-- Sep 22, 2020 : MVP feature complete
-- Sep 23, 2020 : POSTMVP feature complete
-- Sep 24, 2020 : some CSS flaws fixed.
+- September 22, 2020 : MVP feature complete
+- September 23, 2020 : POSTMVP feature complete
+- September 24, 2020 : some CSS flaws fixed.
+- October 19, 2020: Added hamburger menu for phones.
