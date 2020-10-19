@@ -111,7 +111,7 @@ JSON snippet :
 |Sept 21-22| Core Application Structure (HTML, CSS, JS) | Complete
 |Sept 23| MVP | Complete
 |Sept 24| Post MVP | Complete
-|Sept 25| Presentations | Incomplete
+|Sept 25| Presentations | Complete
 
 ## Priority Matrix
 
