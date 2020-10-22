@@ -158,7 +158,8 @@ removeMovie()
 
 ## Change Log
 
-- September 22, 2020 : MVP feature complete
-- September 23, 2020 : POSTMVP feature complete
-- September 24, 2020 : some CSS flaws fixed.
-- October 19, 2020: Added hamburger menu for phones.
+- September 22th, 2020 : MVP feature complete
+- September 23th, 2020 : POSTMVP feature complete
+- September 24th, 2020 : some CSS flaws fixed.
+- October 19th, 2020: Added hamburger menu for phones.
+- October 22nd, 2020: contact me page now has a proper form that will receive responses, (using google forms).
