@@ -318,8 +318,7 @@ a{
     justify-content: flex-start;
   }
  
-  #tabs,
-  {
+  #tabs {
    display: flex;
    flex-wrap: wrap;
    align-items: center;
@@ -327,12 +326,7 @@ a{
    padding: 15px;
   }
 
-  /* #tabs {
-   display: block;
-   margin: 0 auto;
-  }  */
- 
- 
+  
   .footer-image{
     width: 26%;
     margin: auto;
@@ -384,7 +378,7 @@ text-decoration: underline;
 font-size: larger;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 500px) {
 
 
   .tabs-ul {
@@ -404,7 +398,7 @@ font-size: larger;
 
 .hamburger {
   display: block;
-  margin-left: 320px;
+  margin-left: 420px;
   padding: 10px 30px;
 }
 
