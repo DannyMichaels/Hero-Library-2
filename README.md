@@ -163,3 +163,4 @@ removeMovie()
 - September 24th, 2020 : some CSS flaws fixed.
 - October 19th, 2020: Added hamburger menu for phones.
 - October 22nd, 2020: contact me page now has a proper form that will receive responses, (using google forms).
+- November 5th, 2020: Hero and Movie poster hover now has a smoother animation on hover state.
