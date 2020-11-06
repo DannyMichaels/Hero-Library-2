@@ -43,12 +43,14 @@ nav {
   .footer-image a img{
     width: 23%;
     text-decoration: none;
+    transition: transform 450ms;
   }
 a{
   text-decoration: none;
 }
   .footer-image:hover{
     width: 25%;
+    transform: scale(1.08)
   }
   
   footer {
@@ -159,7 +161,8 @@ a{
     justify-content: center;  
     margin: 20px;
     border: 2px solid white;
-    opacity: 95%;
+    opacity: 98%;
+    transition: transform 450ms;
   }
 
 
@@ -170,9 +173,8 @@ a{
   
   .hero-img:hover,
    .movie-img:hover {
-    opacity: 200%;
-    width: 270px;
-    height: 270px;
+    opacity: 100%;
+    transform: scale(1.08);
   }
   .search-container {
     display: flex;
