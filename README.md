@@ -6,7 +6,7 @@ Website Link: https://dannymichaels.github.io/Hero-Library/
 
 ## Project Description
 
-Hero Library is an website where the user will be able to search and find Super-Hero data such as stats and images. 
+Hero Library is an HTML, CSS, and jQuery website where the user will be able to search and find Super-Hero data such as stats and images. 
 Once the user enters his input the image of searched hero will spawn, with additional description and data underneath.
 
 ## API and Data Sample
@@ -135,25 +135,15 @@ JSON snippet :
 
 ## Code Snippet
 
-Happy with this function, it removes the previous search results once you enter it.
+Happy with this function, it gets rid of error message when movie image not found.
 
 ```
-function removeHero() {
-  const removeDiv = document.querySelector('.heroes')
-    while (removeDiv.lastChild) {
-    removeDiv.removeChild(removeDiv.lastChild)
-  }
-}
-removeHero()
 
-function removeMovie() {
-  const removeMovieDiv = document.querySelector('.movies')
-  while (removeMovieDiv.lastChild) {
-    removeMovieDiv.removeChild(removeMovieDiv.lastChild)
-  }
-}
-
-removeMovie()
+  if (movie.Poster !== "N/A") {
+   // gets rid of error message when movie image not found
+   const image = $(`<img class="movie-img" src="${movie.Poster}"/>`); // create element img assign it to a variable
+   movieContainer.append(image); //append image to the movie container
+   }
 ```
 
 ## Change Log
@@ -164,3 +154,4 @@ removeMovie()
 - October 19th, 2020: Added hamburger menu for phones.
 - October 22nd, 2020: contact me page now has a proper form that will receive responses, (using google forms).
 - November 5th, 2020: Hero and Movie poster hover now has a smoother animation on hover state.
+- Dec 21st, 2020: Converted code to jQuery.
