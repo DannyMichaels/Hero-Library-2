@@ -2,7 +2,7 @@
 $(document).ready(function () {
   const domain =
     "https://cors-anywhere.herokuapp.com/https://superheroapi.com/api/";
-  // https://cors-anywhere.herokuapp.com/
+ 
   const apiKey = "1791582447662011";
   const baseUrl = `${domain}${apiKey}/search/`;
 
